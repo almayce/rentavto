@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "io.almayce.dev.rentavto"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:support-vector-drawable:26.+'
+    compile 'com.android.support:cardview-v7:26.+'
+
+    testCompile 'junit:junit:4.12'
+
+    // moxy
+    compile 'com.arello-mobile:moxy:1.5.3'
+    compile 'com.arello-mobile:moxy-app-compat:1.5.3'
+
+    // rx
+    compile "io.reactivex.rxjava2:rxjava:2.0.5"
+    compile "io.reactivex.rxjava2:rxandroid:2.0.1"
+
+
+    kapt 'com.arello-mobile:moxy-compiler:1.5.3'
+    kapt 'com.android.databinding:compiler:2.3.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+//    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.18'
+    compile "org.jetbrains.anko:anko-coroutines:+"
+}
+repositories {
+    mavenCentral()
+}

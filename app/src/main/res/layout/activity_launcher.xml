@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:onClick="onItemClick"
+                    android:contentDescription="a"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/a1" />
+
+                    <TextView
+                        android:layout_margin="@dimen/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Эконом - класс"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:onClick="onItemClick"
+                    android:contentDescription="b"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/b1" />
+
+                    <TextView
+                        android:layout_margin="@dimen/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Бизнесс - класс"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:onClick="onItemClick"
+                    android:contentDescription="c"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/c1" />
+
+                    <TextView
+                        android:layout_margin="@dimen/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Представительский класс"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:onClick="onItemClick"
+                    android:contentDescription="f"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/f4" />
+
+                    <TextView
+                        android:layout_margin="@dimen/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Внедорожники"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:onClick="onItemClick"
+                    android:contentDescription="e"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/e1" />
+
+                    <TextView
+                        android:layout_margin="@dimen/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Микроавтобусы"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:onClick="onItemClick"
+                    android:contentDescription="d"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/d1" />
+
+                    <TextView
+                        android:layout_margin="@dimen/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Минивены"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

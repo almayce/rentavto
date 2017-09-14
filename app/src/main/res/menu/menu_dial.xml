@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <item
+        android:title="Call"
+        android:id="@+id/action_call"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_call_white_24dp"
+         />
+</menu>
